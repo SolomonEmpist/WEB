@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GH_change background</title>
+<meta name="author" content="Draglion Software">
+
+<style>
+	html, body {
+	
+	width:  100%;
+	height: 100%;
+}
+body {
+	
+	background-color: #000;
+	vertical-align: top;
+	overflow: hidden;
+}
+	</style>
+
+</head>
+
+<body id="body_color">
+<!---part 1 css--->
+<style>
+	/*you can use the website 
+	http://www.colorzilla.com/gradient-editor/*/
+	@charset "utf-8";
+/* change the color of background */
+.graydient1{
+background: #fce6bc; /* Old browsers */
+background: -moz-linear-gradient(top, #fce6bc 0%, #f8a500 42%, #f8a500 51%, #f8a500 61%, #fbd893 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fce6bc 0%,#f8a500 42%,#f8a500 51%,#f8a500 61%,#fbd893 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fce6bc 0%,#f8a500 42%,#f8a500 51%,#f8a500 61%,#fbd893 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce6bc', endColorstr='#fbd893',GradientType=0 ); /* IE6-9 */
+}
+.graydient2{
+background: #8e8e8e; /* Old browsers */
+background: -moz-linear-gradient(top, #8e8e8e 0%, #8e8e8e 28%, #0c0c0c 45%, #010101 50%, #0a0a0a 59%, #4a4a4a 76%, #353535 87%, #1a1a1a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #8e8e8e 0%,#8e8e8e 28%,#0c0c0c 45%,#010101 50%,#0a0a0a 59%,#4a4a4a 76%,#353535 87%,#1a1a1a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #8e8e8e 0%,#8e8e8e 28%,#0c0c0c 45%,#010101 50%,#0a0a0a 59%,#4a4a4a 76%,#353535 87%,#1a1a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e8e8e', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */
+}
+.graydient3{
+background: #cfe0e9; /* Old browsers */
+background: -moz-linear-gradient(top, #cfe0e9 0%, #aacede 17%, #61acc7 35%, #3a9cc2 52%, #42b6d6 59%, #4cd8f0 71%, #3aa5c2 84%, #26688c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #cfe0e9 0%,#aacede 17%,#61acc7 35%,#3a9cc2 52%,#42b6d6 59%,#4cd8f0 71%,#3aa5c2 84%,#26688c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #cfe0e9 0%,#aacede 17%,#61acc7 35%,#3a9cc2 52%,#42b6d6 59%,#4cd8f0 71%,#3aa5c2 84%,#26688c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe0e9', endColorstr='#26688c',GradientType=0 ); /* IE6-9 */
+}
+.graydient4{
+background: #ebeded; /* Old browsers */
+background: -moz-linear-gradient(top, #ebeded 1%, #ebeded 12%, #d2d3da 28%, #afb1bf 49%, #d3d6db 77%, #ebeded 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ebeded 1%,#ebeded 12%,#d2d3da 28%,#afb1bf 49%,#d3d6db 77%,#ebeded 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ebeded 1%,#ebeded 12%,#d2d3da 28%,#afb1bf 49%,#d3d6db 77%,#ebeded 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeded', endColorstr='#ebeded',GradientType=0 ); /* IE6-9 */
+}
+
+	</style>
+<!----part 1 end------>
+
+
+
+	<!-------change the background color-------------->
+	<script>
+		function color1(event)
+  {
+  var cubebody=document.getElementById('body_color'); 
+        cubebody.className = 'graydient1'; 
+  }
+		function color2()
+  {
+      var cubebody=document.getElementById('body_color'); 
+       cubebody.className = 'graydient2'; 
+  }
+		function color3()
+  {
+      var cubebody=document.getElementById('body_color'); 
+       cubebody.className = 'graydient3';  
+  }
+		function color4()
+  {
+      var cubebody=document.getElementById('body_color'); 
+       cubebody.className = 'graydient4'; 
+  }
+	</script>
+	<style>
+/* 下拉按钮样式 */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+ 
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: fixed;
+	left: 50px;
+	top: 20px;
+    display: inline-block;
+}
+ 
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ 
+/* 下拉菜单的button */
+.dropdown-content button {
+    background-color: #4CAF50;
+	border-radius: 6px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+ 
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+ 
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+ 
+<div class="dropdown">
+  <button class="dropbtn">Background</button>
+  <div class="dropdown-content">
+	  <button onMouseDown="color1()">type 1</button>
+	  <button onMouseDown="color2()">type 2</button>
+	  <button onMouseDown="color3()">type 3</button>
+	  <button onMouseDown="color4()">type 4</button>
+  </div>
+</div>
+	<!--------change color end---------->
+
+</body>
+</html>
